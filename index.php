@@ -1,4 +1,4 @@
-<?
+<?php
 // redirecting to login page if not logged in
 session_start();
 if(!isset($_SESSION['username'])){
@@ -12,7 +12,20 @@ if(!isset($_SESSION['username'])){
 <!-- content -->
 
 
-<h1>index</h1>
+<h1>Welcome <?php echo $_SESSION['username'] ?></h1>
 
+<!-- links for other pages -->
+<?php
+  if($_SESSION['perm']==100){
+    echo "<a href = 'vieworders.php'>View Orders</a>";
+  }
+ ?>
+ <br>
+<a href="menu.php">Menu</a>
+<br>
 <!-- link for logout -->
 <a href="logout.php">Logout</a>
+<br>
+<a href="downloads.php">Downloads</a>
+
+<!-- info such as rank, problems submitted, member scores, admin released information, etc-->
