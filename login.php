@@ -1,4 +1,5 @@
 <?php
+//attempts a log in with entered username and password, sets appropriate session variables, redirects to index if succssessful
 function login($user, $pass){
   $servername = "localhost";
   $username = "root";
@@ -16,7 +17,7 @@ function login($user, $pass){
 
     if(session_status()!==2){
         echo "logging in";
-      session_start();
+        session_start();
     }
 
     $data = $result->fetch_assoc();
@@ -30,11 +31,12 @@ function login($user, $pass){
     die();
   }
   else{
-    echo "wrong";
+    // wrong login
+    echo "<p>wrong login</p>";
   }
 }
 
-// on submit
+// on submit, try to log in
 if(isset($_POST["submit"])){
       if(isset($_POST["loginPassword"])&&isset($_POST["loginUser"])){
         login($_POST["loginUser"], $_POST["loginPassword"]);
@@ -42,6 +44,8 @@ if(isset($_POST["submit"])){
 }
  ?>
 
+
+<!--  log in form -->
 <h1>Login</h1>
 <form class="loginForm" action="login" method="post">
   <center>
