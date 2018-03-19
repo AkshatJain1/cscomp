@@ -16,9 +16,7 @@ if(!isset($_SESSION['username'])){
 
 <!-- links for other pages -->
 <?php
-  if($_SESSION['perm']==100){
     echo "<a href = 'vieworders.php'>View Orders</a>";
-  }
  ?>
  <br>
 <a href="menu.php">Menu</a>

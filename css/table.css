@@ -1,0 +1,41 @@
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 3em;
+  margin: 0 auto;
+
+}
+
+td,th {
+  border: 1px dashed #aaa;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+
+}
+tr{
+  /* width: 70em; */
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.pic{
+
+}
+
+.box{
+	width:10px;
+	height:10px;
+}
+
+.red{
+	background:#f00;
+}
+.green{
+	background:#0f0;
+}
+.blue{
+	background:#00f;
+}

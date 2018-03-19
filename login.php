@@ -23,7 +23,7 @@ function login($user, $pass){
     $data = $result->fetch_assoc();
     $_SESSION["dbid"] = $data["team_id"];
     $_SESSION["username"] = $data["username"];
-    $_SESSION["perm"] = isset($data["permission"]) ? $data["permission"] : 100;
+    $_SESSION["perm"] = isset($data["permission"]) ? $data["permission"] : 1;
 
     ob_start();
     header('Location: '.'index.php');
