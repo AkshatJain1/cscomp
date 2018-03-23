@@ -5,18 +5,21 @@ table {
   width: 80%;
   margin-bottom: 3em;
   margin: 0 auto;
-
+  resize: false;
 }
 
 td,th {
   border: 1px dashed #aaa;
   text-align: center;
   padding: 5px;
-  position: relative;
-
+  /* position: relative; */
+  /* overflow-y: scroll; */
+  /* height: 40px; */
+  overflow: auto;
 }
 tr{
   /* width: 70em; */
+  /* overflow-y: scroll; */
 }
 tr:nth-child(even) {
   background-color: #dddddd;

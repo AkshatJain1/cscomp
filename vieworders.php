@@ -72,7 +72,7 @@
      <?php if($_SESSION['perm']==100){?>
      <th>User</th>
    <?php } ?>
-     <th>Active</th>
+     <th>Status</th>
      <?php if($_SESSION['perm']==100){?>
      <th>Delete</th>
    <?php } ?>
@@ -97,7 +97,7 @@
    while($row = $result->fetch_assoc()) {
      if($row['team_user']==$_SESSION['username']||$_SESSION['perm']==100){
        echo "<tr>
-       <td>".$row['itemsName']."</td>
+       <td>".str_replace('|', '<br>', $row['itemsName'])."</td>
        <td>".$row['cost']."</td>";
        if($_SESSION['perm']==100)
         echo "<td>".$row['team_user']."</td>";
@@ -116,3 +116,7 @@
    $conn->close();
     ?>
  </table>
+
+ <script type="text/javascript">
+
+ </script>
