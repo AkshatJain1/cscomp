@@ -151,16 +151,17 @@ if($result->num_rows<3){
       $sql = "SELECT * FROM teams WHERE level!='null' ORDER BY level, points DESC, problemsWrong, username;";
   }
   $result = $conn->query($sql);
-  $adv=true;
+
+  $nov=true;
   if($result->num_rows>0){
-    echo "<table style = 'display: inline;' id = 'rankings'><th>Team</th><th>Points</th><th>Right</th><th>Wrong</th>";
-    if($_SESSION['perm']==100){
+    if($level=='adv'||$_SESSION['perm']==100){
+      echo "<table style = 'display: inline;' id = 'rankings'><th>Team</th><th>Points</th><th>Right</th><th>Wrong</th>";
       echo "<caption>Advanced Rankings</caption>";
     }
     while($row = $result->fetch_assoc()) {
-      if($row['level']=='nov'&&$adv == true&&$_SESSION['perm']==100){
+      if($row['level']=='nov'&&$nov == true){
         echo "</table><table style = 'float:right;' id = 'rankings'><caption>Novice Rankings</caption><th>Team</th><th>Points</th><th>Right</th><th>Wrong</th>";
-        $adv = false;
+        $nov = false;
       }
       echo "<tr>
       <td>".$row['username']."</td>";
@@ -173,3 +174,11 @@ if($result->num_rows<3){
   }
 
  ?>
+
+ <APPLET CODE="ThisApplet.class" CODEBASE="applets/" WIDTH=125 HEIGHT=125>
+
+ <PARAM NAME=TEXT VALUE="An argument">
+
+ <P>Your browser does not support applets.<P>
+
+ </APPLET>

@@ -21,20 +21,26 @@ echo $_SESSION['username']."<br>";
 
  <!-- links for other pages -->
  <nav id = 'tabs' style="float: right">
-  <a href="index.php">Home</a>
+  <a href=<?php echo $dir."index.php" ?>>Home</a>
 
-   <a href="menu.php">Menu</a>
+   <a href=<?php echo $dir."menu.php" ?>>Menu</a>
 
    <a href = 'vieworders.php'>View Orders</a>
    <?php if($_SESSION['perm']==100){ ?>
-     <a href="writtenScore.php">Writtens</a>
+     <a href=<?php echo $dir."writtenScore.php" ?>>Writtens</a>
  <?php } ?>
 
  <?php if($_SESSION['perm']==100){ ?>
-   <a href="addTeam">Add Team</a>
+   <a href=<?php echo $dir."addTeam.php" ?>>Add Team</a>
+<?php } ?>
+<?php if($_SESSION['perm']==100){ ?>
+  <a href=<?php echo $dir."uploads/gradeProblems.php" ?>>Grade Problems</a>
+<?php } ?>
+<?php if($_SESSION['perm']==1){ ?>
+  <a href=<?php echo $dir."submitProblem.php" ?>>Submit Problems</a>
 <?php } ?>
 
-   <a href="downloads.php">Downloads</a>
+   <a href=<?php echo $dir."downloads.php" ?>>Downloads</a>
 
-   <a href="logout.php">Logout</a>
+   <a href=<?php echo $dir."logout.php" ?>>Logout</a>
  </nav>
