@@ -174,11 +174,3 @@ if($result->num_rows<3){
   }
 
  ?>
-
- <APPLET CODE="ThisApplet.class" CODEBASE="applets/" WIDTH=125 HEIGHT=125>
-
- <PARAM NAME=TEXT VALUE="An argument">
-
- <P>Your browser does not support applets.<P>
-
- </APPLET>

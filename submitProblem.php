@@ -17,5 +17,5 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select><br><br>
-        <input type="submit" name="submit" value="Upload">
+        <input type="submit"id = 'problemSubmit' name="submit" value="Upload" readonly>
 </form>
