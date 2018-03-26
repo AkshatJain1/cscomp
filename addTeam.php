@@ -25,12 +25,6 @@ if(isset($_POST['sub'])) {
 
   header("Location: addTeam.php");
 }
-
-
-
-
-
-
  ?>
 <table>
 <form style = 'margin-top:10em;' action="addTeam" method="post">
@@ -49,7 +43,7 @@ if(isset($_POST['sub'])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $num = 'team'.rand(10,100);
+    $num = 'team'.rand(1, 100);
   while (true) {
     $num = 'team'.rand(1, 100);
 

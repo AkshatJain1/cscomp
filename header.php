@@ -60,7 +60,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
  <script>
  // Set the date we're counting down to
- var countDownDate = new Date("March 23, 2018 3:37:25").getTime();
+ var countDownDate = new Date("March 26, 2018 18:32:00").getTime();
 
  // Update the count down every 1 second
  var x = setInterval(function() {
@@ -79,7 +79,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
    // Display the result in the element with id="demo"
    document.getElementById("timer").innerHTML = hours + "h "
-   + minutes + "m ";
+   + minutes + "m " + seconds + "s ";
 
    // If the count down is finished, write some text
    if (distance < 0) {
