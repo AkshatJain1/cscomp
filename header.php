@@ -38,7 +38,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
    <a href=<?php echo $dir."menu.php" ?>>Menu</a>
 
-   <a href = 'vieworders.php'>View Orders</a>
+   <a href = <?php echo $dir."vieworders.php" ?>>View Orders</a>
    <?php if($_SESSION['perm']==100){ ?>
      <a href=<?php echo $dir."writtenScore.php" ?>>Writtens</a>
  <?php } ?>
@@ -60,7 +60,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
  <script>
  // Set the date we're counting down to
- var countDownDate = new Date("March 26, 2018 18:32:00").getTime();
+ var countDownDate = new Date("March 27, 2018 18:32:00").getTime();
 
  // Update the count down every 1 second
  var x = setInterval(function() {

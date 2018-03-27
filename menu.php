@@ -1,6 +1,8 @@
 <?php $dir = ""; include($dir . "header.php"); ?>
 <link rel = "stylesheet"  href ="css/table.css">
+<?php if($_SESSION['perm']==100){?>
 <a href="addItem.php" style="float:right; margin-right: 1em;">Add Item</a>
+<?php } ?>
 <h3>Menu</h3>
 <?php
 if (isset($_GET['toggleNo'])&&$_SESSION['perm']==100) {
