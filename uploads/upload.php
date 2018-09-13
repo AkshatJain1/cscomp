@@ -35,10 +35,10 @@ if(isset($_POST['submit'])){
       move_uploaded_file($_FILES["java"]["tmp_name"], $max. "/" . $_FILES["java"]["name"]);
 
       if($_POST['problemNumber']<10){
-        copy("prob0".$_POST['problemNumber'].".txt", $max. "/". "/" ."prob0".$_POST['problemNumber'].".txt");
+        copy("input/prob0".$_POST['problemNumber'].".txt", $max. "/". "/" ."prob0".$_POST['problemNumber'].".txt");
       }
       else{
-        copy("prob0".$_POST['problemNumber'], $max. "/" . $_FILES["java"]["name"] . "/" ."prob0".$_POST['problemNumber'] );
+        copy("input/prob".$_POST['problemNumber'], $max. "/" . $_FILES["java"]["name"] . "/" ."prob".$_POST['problemNumber'] );
       }
 
 

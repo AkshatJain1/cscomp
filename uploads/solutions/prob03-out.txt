@@ -1,8 +1,40 @@
-40427 MAGNANIMOUS
-819 PETTY
-101 MAGNANIMOUS
-109 PETTY
-2000221 MAGNANIMOUS
-4063 MAGNANIMOUS
-10 PETTY
-98 MAGNANIMOUS
+A  A  B  C  M  T
+k  n  l  h  a  h
+s  d  a  r  t  e
+h  r  k  i  t  s
+a  e  e  s  h  e
+t  w        e
+            w  a
+               r
+               e
+
+               y
+               o
+               u
+               r
+
+               p
+               r
+               o
+               g
+               r
+               a
+               m
+               m
+               i
+               n
+               g
+
+               t
+               e
+               a
+               m
+
+               c
+               a
+               p
+               t
+               a
+               i
+               n
+               s

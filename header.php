@@ -29,7 +29,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
  ?>
   <!-- Display the countdown timer in an element -->
-<p id="timer" style="display: inline"></p>
+<p id="timer" style="display: inline">Null</p>
 
 
  <!-- links for other pages -->
@@ -60,7 +60,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
  <script>
  // Set the date we're counting down to
- var countDownDate = new Date("March 27, 2018 18:32:00").getTime();
+ var countDownDate = new Date("September 11, 2018 2:30:00").getTime();
 
  // Update the count down every 1 second
  var x = setInterval(function() {
