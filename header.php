@@ -18,16 +18,9 @@ echo "<pre>".$_SESSION['username']."</pre>";
     }
 
 </style>
+
 <header>
-<?php
-
-// $dom = new DOMDocument();
-// $time = $dom->getElementById("timer");
-// if($time->textContent=="EXPIRED"){
-//   echo "lol";
-// }
-
- ?>
+<title>Tompkins CS</title>
   <!-- Display the countdown timer in an element -->
 <p id="timer" style="display: inline">Null</p>
 
@@ -60,7 +53,7 @@ echo "<pre>".$_SESSION['username']."</pre>";
 
  <script>
  // Set the date we're counting down to
- var countDownDate = new Date("September 11, 2018 2:30:00").getTime();
+ var countDownDate = new Date("September 19, 2018 16:40:00").getTime();
 
  // Update the count down every 1 second
  var x = setInterval(function() {

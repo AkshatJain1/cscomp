@@ -155,19 +155,18 @@ if($result->num_rows<3){
   $nov=true;
   if($result->num_rows>0){
     if($level=='adv'||$_SESSION['perm']==100){
-      echo "<table style = 'display: inline;' id = 'rankings'><th>Team</th><th>Points</th><th>Right</th><th>Wrong</th>";
+      echo "<table style = 'display: inline;' id = 'rankings'><th>Team</th><th>Points</th><th>Right</th>";
       echo "<caption>Advanced Rankings</caption>";
     }
     while($row = $result->fetch_assoc()) {
       if($row['level']=='nov'&&$nov == true){
-        echo "</table><table style = 'float:right;' id = 'rankings'><caption>Novice Rankings</caption><th>Team</th><th>Points</th><th>Right</th><th>Wrong</th>";
+        echo "</table><table style = 'float:right;' id = 'rankings'><caption>Novice Rankings</caption><th>Team</th><th>Points</th><th>Right</th>";
         $nov = false;
       }
       echo "<tr>
       <td>".$row['username']."</td>";
       echo "<td>".$row['points']."</td>";
       echo "<td>".$row['problemsRight']."</td>";
-      echo "<td>".$row['problemsWrong']."</td>";
       echo "</tr>";
     }
     echo "</table>";
