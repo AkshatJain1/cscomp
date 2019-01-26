@@ -30,22 +30,25 @@ if(isset($_POST['submit'])){
       $result1 = $conn->query($sql);
       $row = mysqli_fetch_row($result1);
       $max = $row[0]+1;
+      $max = "submissions/".$max;
 
       mkdir("".$max."");
       move_uploaded_file($_FILES["java"]["tmp_name"], $max. "/" . $_FILES["java"]["name"]);
 
-      if($_POST['problemNumber']<10){
-        copy("input/prob0".$_POST['problemNumber'].".txt", $max. "/". "/" ."prob0".$_POST['problemNumber'].".txt");
+      $sql = "SELECT * FROM problems WHERE number='".$_POST['problemNumber']."'";
+      $result1 = $conn->query($sql);
+
+      while($row = $result1->fetch_assoc()){
+        $inName = $row['input'];
       }
-      else{
-        copy("input/prob".$_POST['problemNumber'], $max. "/" . $_FILES["java"]["name"] . "/" ."prob".$_POST['problemNumber'] );
-      }
+
+      copy("input/".$inName.".in", $max. "/" . $inName . ".in");
 
 
       echo "Your file was uploaded successfully.";
 
 
-      $sql = "Insert into submissions(team, status, number) values ('".$_SESSION['username']."','wait','".$_POST['problemNumber']."')";
+      $sql = "Insert into submissions(team, status, number, fileName) values ('".$_SESSION['username']."','wait','".$_POST['problemNumber']."','".$_FILES["java"]["name"]."')";
 
       $result = $conn->query($sql);
     }

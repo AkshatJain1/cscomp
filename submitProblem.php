@@ -32,15 +32,26 @@
         <input type="file" name="java" id="fileSelect" /><br>
         <label for="problemNumber">Problem Number:</label>
         <select class="number" name="problemNumber">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
+          <!--  TODO: get from problem names, keep value same -->
+          <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "admin";
+            $dbname = "cscomp";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            $sql1 = "SELECT * FROM problems";
+
+            $result1 = $conn->query($sql1);
+            while($row = $result1->fetch_assoc()){
+              echo "<option value = '".$row['number']."'>".$row['name']."</option>";
+            }
+          ?>
         </select><br><br>
         <input type="submit"id = 'problemSubmit' name="submit" value="Upload">
 </form>

@@ -1,0 +1,246 @@
+`1234567890-= qwfpgjluy;[]\ arstdhneio' zxcvbkm,./ ~!@#$%^&*()_+ QWFPGJLUY:{}| ARSTDHNEIO" ZXCVBKM<>?
+
+$$$$$$$$\       $$\                                     $$\   $$\                                         $$$$$$$$\ $$\                     $$\
+$$  _____|      $$ |                                    $$$\  $$ |                                        $$  _____|$$ |                    $$ |
+$$ |   $$$$$$\  $$ | $$$$$$$\  $$$$$$\  $$$$$$$\        $$$$\ $$ | $$$$$$\  $$\  $$\  $$\  $$$$$$$\       $$ |      $$ | $$$$$$\   $$$$$$$\ $$$$$$$\
+$$$$$\ \____$$\ $$ |$$  _____|$$  __$$\ $$  __$$\       $$ $$\$$ |$$  __$$\ $$ | $$ | $$ |$$  _____|      $$$$$\    $$ | \____$$\ $$  _____|$$  __$$\
+$$  __|$$$$$$$ |$$ |$$ /      $$ /  $$ |$$ |  $$ |      $$ \$$$$ |$$$$$$$$ |$$ | $$ | $$ |\$$$$$$\        $$  __|   $$ | $$$$$$$ |\$$$$$$\  $$ |  $$ |
+$$ |  $$  __$$ |$$ |$$ |      $$ |  $$ |$$ |  $$ |      $$ |\$$$ |$$   ____|$$ | $$ | $$ | \____$$\       $$ |      $$ |$$  __$$ | \____$$\ $$ |  $$ |
+$$ |  \$$$$$$$ |$$ |\$$$$$$$\ \$$$$$$  |$$ |  $$ |      $$ | \$$ |\$$$$$$$\ \$$$$$\$$$$  |$$$$$$$  |      $$ |      $$ |\$$$$$$$ |$$$$$$$  |$$ |  $$ |
+\__|   \_______|\__| \_______| \______/ \__|  \__|      \__|  \__| \_______| \_____\____/ \_______/       \__|      \__| \_______|\_______/ \__|  \__|
+
+Thanks Patrick Gillespie for creating this awesome text to ASCII art generator (http://patorjk.com/software/taag)
+
+BACK FROM THE BREAK EDITION - BREAKING NEWS
+
+A student competing at the 2019 annual Tompkins Computer Science Competition has
+been caught cheating using a program designed to solve a very specific class of
+problems involving printing out an exact sequence of characters. When
+discovered, the competitor sneered "If you can't come up with original problems,
+you should expect cheating." Needless to say, the competitor was disqualified.
+
+The spokesman for the school has clarified, "Although we may distribute problems
+involving hypothetical cheating, the school does not condone this kind of
+behavior in an actual competition. Besides, you could do this exact thing in Vim
+in 30 seconds."
+
+This inevitably raises the question, what constitutes as cheating? Obviously,
+one cannot ban all pre-written libraries unless students are expected to program
+in x86 assembly. Actually, that doesn't sound like a bad idea...hehehehe
+
+the philosophical rants of a bored programmer
+
+did u know that 3 billion devices run Java? tho i wish we could use python for
+comps instead. did u see lines 15 and 16 in the solution to virtualalu?!? that
+is so convoluted.
+
+    why am i wasting my time typing this, i should be doing my mwr
+
+According to all known laws of aviation, there is no way that a bee should be
+able to fly. Its wings are too small to get its fat little body off the ground.
+The bee, of course, flies anyways. Because bees don't care what humans think is
+impossible.
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Cheating
+{
+    public static void main(String[] args) throws FileNotFoundException
+    {
+        Scanner file = new Scanner(new File("tompkins-2019/official/cheating.in"));
+        System.out.println("public class Cheating\n{");
+        System.out.println("\tpublic static void main(String[] args)\n\t{");
+        while (file.hasNextLine())
+        {
+            String line = file.nextLine();
+            // If line is empty, use empty println() statement as per the spec
+            if (line.isEmpty())
+            {
+                System.out.println("\t\tSystem.out.println();");
+            }
+            else
+            {
+                // Escape backslashes first, then escape double quotes
+                line = line.replace("\\", "\\\\").replace("\"", "\\\"");
+                System.out.println("\t\tSystem.out.println(\"" + line + "\");");
+            }
+        }
+        System.out.println("\t}\n}");
+    }
+}
+
+public class MetaCheating
+{
+    public static void main(String[] args)
+    {
+    	System.out.println("import java.io.File;");
+    	System.out.println("import java.io.FileNotFoundException;");
+    	System.out.println("import java.util.Scanner;");
+    	System.out.println();
+		System.out.println("public class Cheating");
+		System.out.println("{");
+		System.out.println("    public static void main(String[] args) throws FileNotFoundException");
+		System.out.println("    {");
+		System.out.println("        Scanner file = new Scanner(new File(\"tompkins-2019/official/cheating.in\"));");
+		System.out.println("        System.out.println(\"public class Cheating\\n{\");");
+		System.out.println("        System.out.println(\"\\tpublic static void main(String[] args)\\n\\t{\");");
+		System.out.println("        while (file.hasNextLine())");
+		System.out.println("        {");
+		System.out.println("            String line = file.nextLine();");
+		System.out.println("            // If line is empty, use empty println() statement as per the spec");
+		System.out.println("            if (line.isEmpty())");
+		System.out.println("            {");
+		System.out.println("                System.out.println(\"\\t\\tSystem.out.println();\");");
+		System.out.println("            }");
+		System.out.println("            else");
+		System.out.println("            {");
+		System.out.println("                // Escape backslashes first, then escape double quotes");
+		System.out.println("                line = line.replace(\"\\\\\", \"\\\\\\\\\").replace(\"\\\"\", \"\\\\\\\"\");");
+		System.out.println("                System.out.println(\"\\t\\tSystem.out.println(\\\"\" + line + \"\\\");\");");
+		System.out.println("            }");
+		System.out.println("        }");
+		System.out.println("        System.out.println(\"\\t}\\n}\");");
+		System.out.println("    }");
+		System.out.println("}");
+	}
+}
+
+public class MetaMetaCheating
+{
+    public static void main(String[] args)
+    {
+		System.out.println("public class Cheating");
+		System.out.println("{");
+		System.out.println("    public static void main(String[] args)");
+		System.out.println("    {");
+		System.out.println("    	System.out.println(\"import java.io.File;\");");
+		System.out.println("    	System.out.println(\"import java.io.FileNotFoundException;\");");
+		System.out.println("    	System.out.println(\"import java.util.Scanner;\");");
+		System.out.println("    	System.out.println();");
+		System.out.println("		System.out.println(\"public class Cheating\");");
+		System.out.println("		System.out.println(\"{\");");
+		System.out.println("		System.out.println(\"    public static void main(String[] args) throws FileNotFoundException\");");
+		System.out.println("		System.out.println(\"    {\");");
+		System.out.println("		System.out.println(\"        Scanner file = new Scanner(new File(\\\"tompkins-2019/official/cheating.in\\\"));\");");
+		System.out.println("		System.out.println(\"        System.out.println(\\\"public class Cheating\\\\n{\\\");\");");
+		System.out.println("		System.out.println(\"        System.out.println(\\\"\\\\tpublic static void main(String[] args)\\\\n\\\\t{\\\");\");");
+		System.out.println("		System.out.println(\"        while (file.hasNextLine())\");");
+		System.out.println("		System.out.println(\"        {\");");
+		System.out.println("		System.out.println(\"            String line = file.nextLine();\");");
+		System.out.println("		System.out.println(\"            // If line is empty, use empty println() statement as per the spec\");");
+		System.out.println("		System.out.println(\"            if (line.isEmpty())\");");
+		System.out.println("		System.out.println(\"            {\");");
+		System.out.println("		System.out.println(\"                System.out.println(\\\"\\\\t\\\\tSystem.out.println();\\\");\");");
+		System.out.println("		System.out.println(\"            }\");");
+		System.out.println("		System.out.println(\"            else\");");
+		System.out.println("		System.out.println(\"            {\");");
+		System.out.println("		System.out.println(\"                // Escape backslashes first, then escape double quotes\");");
+		System.out.println("		System.out.println(\"                line = line.replace(\\\"\\\\\\\\\\\", \\\"\\\\\\\\\\\\\\\\\\\").replace(\\\"\\\\\\\"\\\", \\\"\\\\\\\\\\\\\\\"\\\");\");");
+		System.out.println("		System.out.println(\"                System.out.println(\\\"\\\\t\\\\tSystem.out.println(\\\\\\\"\\\" + line + \\\"\\\\\\\");\\\");\");");
+		System.out.println("		System.out.println(\"            }\");");
+		System.out.println("		System.out.println(\"        }\");");
+		System.out.println("		System.out.println(\"        System.out.println(\\\"\\\\t}\\\\n}\\\");\");");
+		System.out.println("		System.out.println(\"    }\");");
+		System.out.println("		System.out.println(\"}\");");
+		System.out.println("	}");
+		System.out.println("}");
+	}
+}
+
+++++++++++++++++++++++++++++=====+==========~~~~==~~=========+??I7$ZZZZOOOOOOOOO888OOOOZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$7$7777777777777II7I7777777IIIIIIII??????????????????IIIII7$$$$$ZZZZZZZ$$$77I+++=============++++++++++++++++++++++++++++++++++++++++=======+
+=+===+++++++++++++=====++++===+=++==========~~~===~~~~~======++??7$ZZOOO88888888OOOOOOZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$$$7777777777777I7I777777IIIIIII????????????????????III7$$$$ZZZ$ZZZ$$$$$7I?+================+++=++++==++=+++++++++++++++++++++++=========+
+=+=====+++++++++++=====+++=++==++++=++=======================+??I7$ZOO8OOOO888OOOOOOOZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$$7777777777777777777777IIIIIII????????????????????III77$$$ZZ$$$$$$$$$$7II?+=========~=~===++++++++++++++++++++++++++++++++++++=========+
+=======+++++++++++++++++++==+=============~~~~~=~~~~~~~~~~~~=+??I7ZZOO8O88OO8OOOOOOZZZZ$ZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$$$$77777777777777777777IIIIIIII????????????????????III7$$$$ZZ$$$$Z$$77III?++============+=+++=+++++++++++++++++++++++++++++++++++======?
+==================++++++====================~~==~~~~~~=~~~~==++?I7$ZZOO888888OOOOOZZZZ$$ZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$$$77777777777777777777IIIIIII?????????????????????III77$$$ZZZZZZ$Z$77III?++============++===+++++=====+=+++++++++++++++++++++=========?
+=======================++==================~~~=~~~~~~==~~~~~=+??I$$ZZOOO88888OOOOOZZZZZ$$$$ZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$$777777777777777777777IIIIIII?????????????????????II77$$$ZZZ$$$$$$$7I??+++=============++===++++=====+++++++++++++++++++++===========+
+================++==+=+=+=================~~~===~~~~~~~~~~~==++?I$ZZOOOOO8888OOOOZZZZZZZ$$ZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$$$$777777777777777777777IIIIIIII???????II?????????????II77$$$$Z$$$$$$$7I?++=========~=========+++++====++++++++++++++++++++++===========+
+========================+===================================+++I7$ZZOOO888888OOOZZZZZZZZ$$Z$$ZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$$77777777777777777777777IIIIIIIIIIIIIIIII?????????????II7$$$$$$$$$77777II?++====+===========++++++++++++++++++++++++++++++++++==========?
+===========================+=============~~~~~~~~~~~~~~~~~~=+++I7$ZZOOOO8888OOOOZZZZZZZZZ$$$$$ZZZZZZZZZZZZZZZZZ$$$$$$$$$$7$7777777777777777777777IIIIIIIIIIIIIIIII???????????????II77$$$$$$$$77777II??+++++++++++++++++++++++++++++++++++++++++=++++++++++=========?
+=========================================~~~~~~~~~~~~~~~~~~=+++?7$ZZOOOOOOO8OOOOZZZZZZZZZ$Z$$$Z$ZZZZZZZZZZZZZZZ$$$$$$$$$$777777777777777777777777IIIIIIIIIIIIIIIIII??????????????III7$$$$$$$$7777II???+++++++++++++==+++++++++++++++++++++++++++++++++++++=========?
+=========================================~~~==~~~~~~~~~~~~===+?I7$ZOOOOOOOOOOOOZZZZZZZZ$$$$ZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$77777777777777777777777IIIIIIIIIIII???IIIII?????????????III77$$$$$$777IIII??+++++++++++++++===++++++++++++++++++=++++++++++++++++=========?
+=========================================~~~==~~~~~~~~~~~~~==+?I7$ZOOOO88OOOOOOZZZZZZZZ$Z$$$$ZZZZZZZZZZZZZZZZZZZZ$$$$$$$$77777777777777$77777777IIIIIIIIIII??????I?I????I?????????III7$$$Z$$777III???+++++++++++==+++++++++++++++++++++++=======++=================?
+========================================~~~~==~~~~~~=~~~~~==++??I7$ZOOOO8OOOOOOZZZZZZZZZZ$$$$$$$$ZZZZZZZZZZZZZZZZ$ZZ$$$$$77777777777777$7777777777IIIIIII??????????I????I?????????III7$$$Z$777II????++++++++++++==+++++++++++++++++++++=========++=================?
+=============================================~~~~~~==~==~===+++?I7$ZOOOOOOOOOOOOZZZZZZZZ$$$$$$$ZZZZZZZZZZZZZZZZZ$$$$$$$$77777777777777$$7777777I777IIIIII?????????????????????????III7$$$$$$77II????+++++++++++++++++++++++++++++++++++++==========================?
+=======================================~~~~~~~~~~~~~~~~~~~==+++??I7ZZOOO8OOOOOOOZZZZZZZZ$$$$$ZZZZZZZZZZZZZZZZZZZZZ$$$$$$77777777777777$$777777IIII7IIIIII???????????????????????III?II7$$$$$77II???++++++++++++++++++++++++++++++++++++++=++=======================?
+======================================~~~~~=~~~~~~~=~~~~~~==++++?I$ZZOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$7777777II77777$$7777777777IIIIIIIIIIIIII?????II?????????????I7$$$$$77II??++++====+++=======++++++++++++++++++++++====++===================?
+=======================================~~~==~~~~~~~=~~~~~==+++++?7$ZZOOOOOOOOOOOZZZZZZZZZZZZZZZZZZ$ZZZZZZZZZZZZZZZZZ$$$$$$$777777I7777$$$777777777777IIIIIIIIIIIIIIIIIIIII????????????I7$$$77III?++++===============++++++++++++++==++=============================?
+======================================~~~~~~~~~~~~==~~~~===+++++?I7$ZZOOOO8OOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$77777777$$$$$$777$$$$$$$$$$$$$$$$$$$$777777III??????????I7$$$77III??+++==============+++++++++++++++==++=============================+
+=================================================+++===+++++++++?I7$ZOOOOO8OOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZOOOZZZZZZZZZZZZZ$$$$$$77$$$$$$$$$$$$$$$$$$$$ZZZZZZZZ$$$$$$$$$$77III?????????II7$$$777I??++++++==========+++++++++++++++++++++============================+
+=====================================~~~~~~~~~~~~~~~~~~~===+++++?I7$ZOOOOO8OOOOOZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOZZZZZZZ$$$$$$$$$$$$$$$$$$$$ZZZZZZZZZZZZZZZZZ$$$$$$$77777III??????II7$$$777I?++++++++++====++++++++++++++++++++++++============================+
+====================================~~~~~~=~~~~~~==~~~~====+++++??7$ZOZOOOOOOOOOZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOOOOOOOOOZZZZ$$$$$$$$$$$$$$$$$ZZZZZZZZZZZZZZZ$$$777777777777IIIII?????I77$$777II?+++++++=======++++++++++++++++++++++++++=========================+
+====================================~~~~~~~~~~~~~=~~~~~===+++++++?I7ZZZZOOOOOOOZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOZZZZZZ$$$$$$$$$$$$$$$$$$$$ZZZZZZ$$$$$77777II7IIIIIIIIII??????II7777777I??+++++++=======++++++++++++++++==+++++===========================?
+===================================~~~~~~~~~~~~~~=~~~===+++++++++?I7$$ZZOOOOOOOZZZZZZZZZZZZZOOOOOOOOOOOOOOZZZOOOOOOZOOOOOOOOZZZZZZ$$$$777777777$$$$ZZZZZZZZZZZZ$$$$$7777IIIIIIII????????II777777II???++++++++++++++++++++++++++++=======================~~~~~~~~=~=+
+===========================~=======~~~~~~~~~~~~~==~~~~==+++++++++??I7$ZZOOOOOOOZZZZZZZZZZZZOOZZZOOZZZZZZZZZZZZZZZZZZZZZOOOOOOZZZZZ$$$7777II77777$$$ZZZZOOOOOOOOOZZZZZ$$777IIIII?????????I777777IIIII??+++++++++++++++++++++++++++======================~~~~~~~~====+
+===========================~======~~~~~~~~~~~~~========+++++++++++?I7$ZZOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOZZOOOOOOZZZZOOOOZZZ$$$77IIIIIIII7$$ZZOOZZZOOOOOOOOZZZZZZZ$$7III??????????II77777II7777??+++?++++++++++++++++++++============================~~=~====+
+~=~==============~=~~~=~~~~~~~~===~~~~~~~~~~~~~~~~~~~===++++++++++??I$$ZOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOO8OOOOOOOOOOZZOOOOZZ$$$77III?IIII77$ZZOOZZZZZZZZZZ$$$$$$$$$7777II?????????II7777I???7$77??+++?????+++++++???++++++========================~~~==~~=~~=+
+====~======~~~~~~~~~~~====~~~~~~~~~~~~~~~~~~~~~~~~~~~===+=++++++++??I7$ZOOOOOOOZZZZZZZZZZZZZZZZZZZZOOOOO888888888OOOOOOOOOZZZOOOZZ$$$77III????II77$ZZZZZZZZZ$$$77777IIIIIIIIIII??????????II7II?????777I+???+??+???????++++++++++++++====================~~~~~~~~~==+
+====~==~~~=~~~~~~~~~~~====~~~~~~~~~~~~~~~~~~~~~~~~~~~===+=+++++++++??I$ZZOOOOOOOZZZZZZZZZZZZZZZZOOOOOOOOOO88OOOOOOOOOOOZZZZZZOOOZZ$$$777II????III7$$ZZZZ$$$$$7777777IIIIII??II????????????I7I??????777I????+??+??????+++++++++=====================================+
+====~===~~~~~~==~~=~~~~~~~~~~~~~~~~~~~~~~~:~~~~~~~~~~====++++++++++??7$ZOOOOOOOOZZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOZZZZZZZZZZZZZOOZZZ$$$7III?????II7$$$ZZZZZZZ$$$777777IIIIIII????????++????III??????777I?++++??++++++++++++++++++========================~~~~~~~~~~~+
+====~===~~~~~~==~~=~~~~~~~~~~~~~~~~~~~~~~~~~~~=~~~~====++++++++++?II7$$ZOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77IIIIIIIIIII77$$$$$$$$$$777777IIIIIII????????++????IIII????I77II++++++++?+++++++++++++++=========================~~~~~~===~=+
+======~~~~~~~~==~~~~~~~~~~~~~~~~~:::::~~:::::~~~~~~~====++++++++?I7$$$$ZOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$77IIIIIIIIIIII77777777777777777IIIIIII?????????++???I77III??I77I?+++++++++++++++++++++++=++======================~~~~~~~~~~~=+
+=======~=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~====+++++++++?7$$ZZZZZOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZOZZZZZZZZZZZZZZZZZZZZZZZ$$$7IIIIIIIIIIIII7I7777777777777II7IIII???????????????I777IIIIII7I?+++++++++++++++++++++++=========================~~~~~~~~~~~=+
+=======~=~~~~~~~~~~~~~~~~~~~~=~~~~~~~~~~~~~~~~~~======++++++++++I$$$Z$ZZZZZZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$7IIIIII?IIIIIIIIIIIII77777777IIIIIII???????????????7777IIII?II?++++++++++++++++++++++++=========================~~~~~~~~~~~~+
+====~=~~~~~~=~~~~~~~~~~~~~~~~~~~~~::~~~~:~~~~~~~~~~~====+++=+++?I$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$77III?IIIIIIIIIIIIIIIIIIIIIIIIIIIIII????????????????I777IIII?II?+++++++++++++++++++++++=================================~~~~=+
+====~=~~~~~~=~~=~~~~~~~~~~=~=~~~~~~~~~~~~~~~~~~~~~~=++++++=++++?I$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$77III?IIIIIIIIIIIIIIIIIIIIIIIIIIIII?????????????????II7777III??+++=++++++++++++++++++++========================~~~~~~~~~~~~~~+
+======~~~~~==~~~~~~~~~~~~~~=~=~~~~~================++++++++++++?I$$$$$$$ZZZZZZZZ$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$77IIIIIII????IIIIIIIIIIIIIIIIIIIII??????????????????II7777III?+++++++++++++++++++++++++++========================~~~~~~~~~~~=+
+~=====~=~=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~=+++++++++++??7$$$$$$ZZZZZZZZ$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77IIIIIII???IIIIIIIIIIIIIIIIIIIIII???????????++?????II7777II?++==+++++==+++++++++++++++++========================~~~~~~~~~~~~+
+========~=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~=+++++++++++++I$$$$$$ZZZZZZZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77IIIIIIIIIIIIIII77777IIIIIIIIIIII????????????+++???IIIIIIII?+===++=======+++++++++++++=========================~~~~~~~~~~~~~+
+===========~==~~~~~~~~~=~~==~~~~~~~~~~~~~~~~~~~~~===+++++++++++++?7$$$$ZZZZZZZZ$$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$777IIIIIIIIIIIIII77$7777IIIIIIIIII?????????????++???III??????+====+=======++++++++++++++++=========================~~~~~~~~~~+
+===========~=~~~~~~~~~~==~=====~~~===~============+++++++++++++++??7$$$$ZZZZZZ$$$$$$$$$$Z$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$77IIIIIIIIIIIIIII7$$$$7777IIIIIII?????????????+????III??????+++++++++++++++++++++++++++++=================================~=+
+==========~~~~~~~~~~~~~~~~~~=~~~~~~~~~~~~~~~~~~~~~==============+++?7$$$ZZZZZZ$$$$$Z$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOZZZZZZZZZZZZZZ$$77III?????I?IIIII7$$$$$$$77IIIIII????????????????????I????++=============+++++++++++==============~==============~=====~~~~=+
+===========~~~~~~~~======~==~==~~~==~~~~~=========+======++=====++++I7$$ZZZZZZZ$ZZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOZZZZZZZZZZZZZ$$$777II??IIIIIIIII77$ZZ$$$$$777IIIII???????????????????????+++++=++++++++++++++++++++++================~~~========~~~~~~~~~~==+
+===========~~~~~~~~==~~=~~=~~~~~~~~~~~~~~~~~~~~~~~=============~==+++I$$$ZZZZZZ$ZZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOZZZZZZZZZZZZZ$$$$77III?IIIIIIIII777$Z$ZZ$$$$77IIIII???????+??????????????+=========+==++=++++++++++==================~~~==~~~===~~~~~~~~~~==+
+=============~~~~~~~~~~~~~==~~~~~~~~~~~~~~~~~~~~~=============~~~==+=?7$$ZZZZZZZZZZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOZZZZZZZZZZZZZ$$$77IIII77$$$77II777$$ZZZZ$$$777IIIII??????+????????????++=====+++++++++++++++++++++++============================~~~~~~~~~~=+
+=============~~==============~~~~~~~~~~~~~~~~~~~~==+==========~~~~===+I$$$$$$ZZZZZZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOZZOOOOOOOOZZZZ$$777I7$$77I7IIIIII7$ZZZZZ$$$$777IIIII????????????????++++++++++++++++++++++++++++++==============================~~~=====~=+
+===========~=================~~~~~~~~~~~~~~~~~~~==++==+======~~~~~====+7$$$$$ZZZZZZZ$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOOZZZZ$$777777IIIIIIIII7I7$ZZZZZZZ$$$77IIII???????????????++========+++==========+++++++===========================~~~~~~~~~~~~==+
+=============================~~~~~~~~~~~~=~~~~~~=============~~~~~====+?7$$$$$ZZZZZZZ$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOZZZZ$$7$777IIIIII?IIIIII7$$ZZZZZZZ$$77IIII????????????+=====================++===++++====================================~===~=+
+=============================~~~===~============++++++=======~~~~~====++I7$$$$ZZZZZZZZ$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOZZZ$$$$$77IIIIII???IIIII77$ZZZZZZ$Z$7III?????????++++======================+++++=+++============~~~~~=====~~~~===~=~~~~~~~~~~~+
+=============================~~~~~~~~~~~=~~~~~~~============~~~~~~~====++?7$$ZZZZZZZZZZ$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$7777IIIIII???I?IIII777$$ZZZZZ$$7II?????+???++========================+=+++++==============~~~~~====~~~=====~=~~~~~~=~~=~+
+=============================~~~=~~~~~~~~~~~~~~~============~~~~~~~~~====++I$$ZZZZZZZZZ$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$7777777IIIII???????IIIII7777$$$ZZ$7II?????????+=========================+===+================~~~~~====~~~=====~~~~~~~~~~~~=+
+============================~~~==~~~~~~==~~~~~~============~~~~~~~~~~~=====+I$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$7777777777IIIII????????IIIII7777$$Z$$7II????????+++++++++++++++++++========+===================~~~~~==============~~~~~~~~~~~~+
+============================~~===~~~~~~==~~~~~~============~~~~~~~~~~~~=====+?7$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77777777777IIIII?????????IIII7777$$Z$$7II???????++=========================+++==================~~~~~~===~~=======~~~~~~~~~~~~~+
+===========================================~===+=++========~~~~~~~~~~~~~======+?I7$$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$77777777777IIIIIIIIIIIIIII77777$$$$$77II????????+=======================~===========================================~~~~~~~~~~+
+===============================================+++++=====================+++++++??II77$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$77777777777777$$$$7777$$$$$7IIII??????++=======================~========================~~~~====~~~~~==~~~~~~~~~~~~~~+
+============================~===~~~~~~~~~~~~~~============~~~~~~~~~~~~~~~~===+++??II77$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77$$7777ZZZ$$77I7777$$$$7IIII??????+==============~===~=~~~~~~======================~=~~~====~~~~=====~~~~~~~~~~~~+
+=================================~~~~~===~~~~=============~~~~~~~~~~~~~~~~~=====++?I77$$$ZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOOOZZZZZZ$$$7$$7??III777$$$77IIIII77$$777IIII??????+==========~===~====~~~~~~======================~~~~~~=====~========~~~~~==~~~~+
+========================================~~~~~==============~~~~=~~~~~~~~=~~~~~===+?I77$$$ZZZZZZZZZZZZZZZZZZZZZZZZOO888888OOOOOOOOOZZ$$$$$$$777$7IIII7I$$$$77IIIIIII777777IIIIII?????++++++=++==========~=~~~~~=============~~~~=======~===============~~~~~~=====~=+
+=======================================~===~~============~~~~~~=~~~~~=~=~~~~~~==+III77$$$ZZZZZZZZZZZZZZZZZZZZZZZZZOOO8888OOOOZZZZZ$$$$$$$$777$$77II77$$$77IIIIIIIII77777IIIII??????++++++++++++++++++++===++=====================================================~=+
+======================+===================~~=============~~~~~~~~~~~~~~=~~~~~==?I7II77$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOZ$$$$$$77$$$$ZZ$$$$77IIII?IIIIIIII7IIIIIIII?????++===========~~~~~~~~~~~~~~~~====================================================+
+======================+==================================~~~~~~=~~~~~~===~~~==?I77II7$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOOOOOOOOOOOOZZ$$$$$$$$$$$$$$$77IIIIIIIIIIIIIIIIIIIIIIII?????+=============~~~~~~~~~~~~~~=============~~~~==================================~=+
+=================================~=========================~~=============+++I7$$$7I7$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOZZZZZ$$$$77$7$$ZZ$$$$77IIIIIIIIIIIIIIIIIIIIIIIIII????+++==============~~==~~~~~~~~===========================================~~~====~~~+
+===============+++=======================================~~~~~=~~~~~~=====+?I7$$Z$7I7$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZOOZZZZZ$$$$$$$$ZZZ$$$77IIIIIIIIIIIIIIIIIIIIIIIIII????+=+===================~~~~~~~~=========================~~~==============~~~~~~~~~~=+
+=============+++++=+++===================================~~~~==~~~=~===++II77$$ZOZ7I7$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$$$$777IIIIIIIIIIIIIIIIIIIIIIIIIII???++=+==================~~~~~~~~~==========================================~~~~~~~~~~~+
+===========+++++++=+++=======================++++===+===~~~~===~~====+?I777$$$ZOOZ77$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$7777777IIIIIIIIIIIIIIIIIIIIIIIIII??++++++++++++++======~==~~~~~~~~~=======================~=================~~=~~=~~~~~~+
+=========+++++++++++++++================~===+++++++++====~~~===~~==+?I7$$$$ZZZOOOZ77$ZZZZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$77777IIIIIIIIIII??IIIIIIIIIIII??+====+==========~~~~~~~=~~~~~====================================~============~=~~~~~=+
+=========+++++++++++++=+===================+=====++++============+?I7$$$ZZZZOO88OO$7$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$7777IIIIIIIIIII??IIIIIIIIIII??++===++==========~~~~~~~~~~~~~~~~~===================================================~=+
+=====++++++++++++++++======================++=++++++==========++?I7$$ZZZZOOO8888OO$$$ZZZZZZZZZZ$ZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77777IIIIIIIIII?IIIIIIIIIII??++===+++============~~~~~~~~~~~~~~==========================~~~================~~===~===+
+=====+++++++++++++++================~~~====+++++++++========+?II7$$$ZZOOO8888888OO$$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$77777IIIIIIIIII?IIIIIIIIII??+++====+===========~~~~~~~~~~~~~~~~=============================================~~===~~~~+
+===+++++++++++++++++=================~====+++++++++++====++?777$$$ZZOO8888888888OOZ$ZZZZZZZZZOOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$777777IIIIIIIIII??IIIIIIII??+===+==++==============~~~==~~~~~~~~===============~============================~~~==~~~~~+
+=++++++++++++++++++++================~===+++++++++++++++?I77$$$ZZZOO8888888DDDD8OOZ$ZZZZZZOZZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$7777777IIIIIIIIIIIIIIIIIIII???++++++++++==========~=~~~==~~~~~~~~~===============~============================~~~==~~~~~+
+++++++++++++++++++++++===============~===+++++++?+???II7$$$$ZZZOOO888888DDDDDDD8OZ$ZZZZZZZZZZZZOOOZZZOZZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$7777777IIIIIIIIIIIIIIIIIIIIIII???+++++++?+++++++++++==============~~==============================================~~~=~~~~=+
++++++++++++++++++++++===========++++=++++??????II7$$$$$ZZZZZOOO8888888DDDDDDDDD88Z$ZZZZZZZZZZZZOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$7777777IIIIIIIIIIIIIIIIIIIIIIIIII?++=====+++==========~~~~~~~==~~===============================================~~~~~~~~~~~~~+
+++++++++++++++++++++=============++++???II777$$$$ZZZZZZZOOOO8888DDDDDDDDDDDDDDD8OZ$ZZZZZZOOZZOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZZ$$$77777777IIIIIIIIIIIIIIIIIIIIIIIII?+++==++=+++++==========~~~~~==~~~~~~~=====================================================~=+
++++++++++++++++++++++++++++????III777$$$$ZZZZZZZZOOZZOOOOO8888DDDDDDDDDDDDDDDDD8OZ$ZZZZZZZZZZZOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZ$$$$$$777777777IIIIIIIIIIIIIIIIIIIIIII?+++======++==============~===~~~~~~~~===========================================~~~~~==~==~=+
+++++++++++++++++++???????I7777$$$$$ZZZZZOOOOOOOOOOOOOOOO888DDDDDDDDDDDDDDDDDDDD8OZ$$ZZZZZZZZZZOZOOOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZ$$$$$$$77777777IIIIIIIIIIIIIIIIIIIIII??++============================~~~===============================================~~~~~=~~~~~=+
++++++++++++++????IIII777$$$$$$$ZZZZZZOOOOO888888888O88888888DDDDDDDDDDDDDDDDDD88OZ$$ZZOZOZZZZZZZOOOOOOOOOOOOOZZOOOZZZZZZZZZZZZZZ$$$$$$7777777777IIIIIIIIIIIIIIIIIIIII?++=============================~~~======================================================~~~~=+
+++++???????III7777$$$$$ZZZZZZZZOOOOOOOOO888888888888888DDDDDDDDDDDDDDDDDDDDDDD888Z$$$ZZOZZZZZZZZOZOZOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZ$$$$$7777777777IIIIIIIIIIIIIIIIIII????++++++++++++++++++===================++===+=======================================~~~=~=~=+
+????IIII777$$$$$ZZZZZZZZOOOOOOO88888888888DDDDDDDDDDDD8DDDDDDDDDDDDDDDDDDDDDDD888Z$$$ZZZZZZZZZZZZZOZOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$777777IIIIIIIIIIIIIIIII?++?+====================+++++++++++++=+++++++=+=+=====================================~~~~~~~=+
+II777$$$$$ZZZZZZZZZOZOOOOOOOO8888888888DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$ZZZZZZZZZZZZZZZZOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZ$$$$$$$$$7777II777IIIIIIIIIII??++??+=====++============================++++=++++===+====================================~~~~~+
+$$$$$$ZZZZZZZZOOOOOOOOOOO888888888DDDDDDDDDDNNDNNDDDDDDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$ZZZZZOOZZZZZZZZZZOOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZZ$$777777IIIIIIIIIIIIII?++++I+=====+==========================~==+++++++++=============================================+
+ZZZZZZZOOOOOOOOOO888888888DDDDDDDDDDDDDDDDDNDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$$ZZZZOOOOZZZZZZZZOOOOOOOOOOOOOOZZZZZZZZZZZZZZZZZZZZZZZZZ$$77777IIIIIIIIIIIII?????+II+++++++++++++++++++====++=========+++++++++++==========================================~=+
+OOOOOOOOOO88888888DD8D88DDDDMDDDDD8D8DDDDDNDNDNDDDDDNDDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$$ZZZZOOOOZZZZZZZZOOOOOOOOOOOOOOOOOOOOOOOZZZZZZZZZZZZZZ$$$7777I7IIIIIIIIIIIII?????++I?+=====================++====+++++++++++++++++++++++++===================================?
+O88888.   ZO88+   ?D~.  . ,:DO.  ,D8DD.. .DD .  . .,NDDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$$ZOOOOOOOZZZZZZZZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOZZZZ$$$$77777IIIIIIIIIIIII???+??++I7?+=++===========================++++++++++++==========================================~=+
+888888D.  .DD7 ..?D.   IZ,.. D$   =DD~. .D7 .  ...   DDDDDDDDDDDDDDDDDDDDDDDDD888Z$$$$$ZZOOOOOOZZZOZZZZOZZZZZOOOOOOOOOOOOOOOOOOOOOOOOOOZZZZ$$$77777IIIIIIIIIIIIIII????????77I+++++++++=+++=======++========+++++++++++++++++=+++============================~~~=~~~+
+8888DD8D....D  .,D+. .NDDD. .,D= ..8O...OD. .,DDDN   :DDDNNDDDNNNDDDDDNDDDDDDDD88Z$$$$$$ZOOOZZOZZZOZZZZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOZZZZ$$$$7777IIIIIIIIIIIIIIIII????+++?777I?+=++===++++++++++++++++++++++++++++++++++++==+++++=====+========================~=~=+
+8DDDDDDD8... .. 8N. .       . DD:...  .OD8...DNDDDO. .DDDDDDDDDDNDDDNNDDDDDDDDD88Z$$$$$$ZOOOOOOOOOOZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOOOZZZ$$$$77777IIIIIIIIIIIIIIIIII????++++77777I++++=============+=========+++++++++++++++++++++++++===+=======================~~~=+
+DDDDDDDDD8..   DDD: ..MDNDDNNNNDN,,  .,NDN...=NDDN:. .NNNDDDDDNNNNNNNNNNNNNNDD888OZ$$$$$$ZOOOZZZOZZZZZZZZZZZZZZZOOOOOOOOOOOOOOOOOOOOZZZ$$$77777IIIIIIIIIIIIIIII7$7I????+??I777$$77I???+++=+======+=======+++++++++++++++++++++++++++++++===========================+
+DDDDDDDNDDD. .NDDDN..  ~I,. .8DDNN.  ,NDDD7..  ... . NNNNDDNDNNNNNNNNNNNNNNNNDD88OZ$$$$$$ZOOOOZZZZZZZZZZZZZZZZZZZ$II7$ZZZZZZZZZZZZZZZZ$$$$$$$777IIIIIIIIIIIIIII$$7I???+++?I$$$$$$$$$$7II??+++====+======++++++++++++++++++++++++++++++++=========================~=+
+DDDDDNNDDDN8.DDDDDNN+  . ..,DDDDNND.,NNNNDDN..  . ,,NNDDDNNNNNDDDNNDNNNNNNNNNDD88OZ$$$$$$ZOOOOOZZZZZZZZZZZZZZZZZZ$$ZO88888OOOOOOOOOOOOOOOZZZZZ$7IIIIIIIIIIIIII7ZZ7I???+++?I$$$$$$$$$$$$$$7I??++==+======++++++++++++++++++++++++++++++++=======================~=~=+
+DNNNNNNNNNMDZDDDDDDDNN8?=IDNDDDDNNNNNNNNNNDNDD$++ZNDDNDDDNNNNNDDDNNDNNNNNNNNNDD88OZ$$$$$$$ZOOOOZZZZZZZZZZZZZZZZZZ$$O88888OOZZ$$$7$7777III777II?????IIIIIIIIIII$O$II???+++?I$$$$$$$$$$$ZZZ$$77??+++++++++++++++++++++++++++++++++++++++++======================~~~~=+
+NNNNNNNNNNNNNNDDDDDDDDDDDDDNDDDDDDDDDDDNNNNNNNNNNNNDDDDDDDNNNNNNDNNNNNNNNNNNDDD88OZ$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZ7$OO888888OOZZ$$$$77III77$$7I??????IIIIIIIII7OO$II????++?I$ZZZZZZ$$$$$ZZZZZ$$77I??++++++++++++++++++++++++++++++++++++++======================~~~=+
+NNNNNNNNNNNNNNDDDDNNNNNDDDDDDDDDDDDDDDDNNNNNNNDDDNNNNDNNNNNNNNNNNNNNNNNNNNNNDDD88OZ$$$$$77$ZZZZZZZZZZZZZZZZZZZZZZZZOOOOOO888OOOZZOOZZZ$$ZZZ$$$77I7I?IIIIIIII7ZOO7II???++++?7ZZZZZZZZZZZZZZZZZZZZZ$$I????+++??++++++++++++++++++++++++++++++========================+
+NNNNNNNNNNNNNDDDDDDDDDDDDDDDDDDNNNNNDDDNNNNNNDDDDNNNNDNNNNNNNNNNNNNNNNNNNNNNDDDD8OZ$$$$7777$ZZZZZZZZZZZZZZZZZZZZZZZZZ777$ZO8OOOZO8D888OO88Z77$ZO88Z$77IIIIII$O8Z7II???++++?7ZZZZZOOOZZZZZZZZZZZZZZZ$$7I??????????++?++++++++++++++++++++++++++=====================+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNDDDD88888DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDNNNNDDDNNNNDD8D888DD8888DDDDDDDNND8D8888888888DDDNDNNNNNNNDDDNNNDDDDDDDDD8D888888888888888888888888888888888OOOOOOOOOOOOOOOOOOOOOOOOO8
+                                                                                                                                                                                                                                                     GlassGiant.com

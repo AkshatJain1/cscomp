@@ -9,7 +9,8 @@ if(!isset($_SESSION['username'])){
    die();
 }
  ?>
- <table ><caption>Submissions</caption><tr><th>Number</th><th>Status</th><th>Submission Output</th></tr>
+ <table ><caption style="margin-bottom: 20px"><strong>Submissions<strong></caption>
+   <tr><th>Name</th><th>Status</th><th>Submission Output</th></tr>
 
 <?php
 
@@ -31,7 +32,12 @@ if(!isset($_SESSION['username'])){
     $sql = "SELECT * FROM submissions WHERE team='".$_SESSION['username']."';";
     $result = $conn->query($sql);
     while($row = $result->fetch_assoc()){
-      echo "<tr><td>".$row['number']."</td>";
+      // TODO: output problem name instead of number
+      $sql1 = "SELECT * FROM problems WHERE number='".$row['number']."';";
+      $result1 = $conn->query($sql1);
+      while($row1 = $result1->fetch_assoc()){
+        echo "<tr><td>".$row1['name']."</td>";
+      }
       echo "<td>".$row['status']."</td>";
       if ($row["status"] != "wait") {
         if (strpos($row['output'], 'Exception') !== false) {
@@ -42,7 +48,7 @@ if(!isset($_SESSION['username'])){
             echo "<td>Passed!</td></tr>";
           }
           else {
-            echo "<td>Logic Error</td></tr>";
+            echo "<td>Logic/Compile Error</td></tr>";
           }
         }
       }
